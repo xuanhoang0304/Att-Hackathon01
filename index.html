@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Css -->
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Hackathon01</title>
+    </head>
+    <body>
+        <!-- Dark Mode -->
+
+        <input type="checkbox" id="darkmode" />
+        <main class="container">
+            <header class="header">
+                <!-- Left -->
+                <div class="header__left">
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.svg" alt="Logo" />
+                    </a>
+                    <div class="header__input-wrap">
+                        <input
+                            type="text"
+                            name="header__input"
+                            class="header__input"
+                            placeholder="Islamic..."
+                        />
+                        <button class="header__search">
+                            <img src="./img/Search.svg" alt="Search" />
+                        </button>
+                    </div>
+                    <button class="header__voice">
+                        <img src="./img/Voice.svg" alt="Voice" />
+                    </button>
+                </div>
+                <!-- Right -->
+                <div class="header__right">
+                    <button class="header__global">
+                        <img src="./img/Global.svg" alt="global-icon" />
+                    </button>
+                    <button class="header__noti">
+                        <img src="./img/Notification.svg" alt="noti-icon" />
+                    </button>
+                    <label class="header__dark-mode" for="darkmode">
+                        <figure class="header__dark-mode--on">
+                            <img src="./img/Dark.svg" alt="darkmode-icon" />
+                        </figure>
+                        <figure class="header__dark-mode--off">
+                            <img src="./img/Sun.png" alt="darkmode-icon" />
+                        </figure>
+                    </label>
+                    <button class="header__upload">
+                        <img
+                            src="./img/Upload.svg"
+                            alt="upload-icon"
+                            class="header__upload-icon"
+                        />
+                        <p class="header__upload-text">Upload</p>
+                    </button>
+                </div>
+            </header>
+            <!-- Live -->
+            <section class="live">
+                <!-- Heading -->
+                <div class="live__heading">
+                    <p class="live__title">Live Videos</p>
+                    <div class="live__action">
+                        <a href="#" class="live__arrow"><</a>
+                        <a href="#" class="live__arrow">></a>
+                    </div>
+                </div>
+                <!--List -->
+                <ul class="live__list">
+                    <!-- Live__item01 -->
+                    <li class="live__item">
+                        <!-- Content -->
+                        <div class="live__item-content">
+                            <p>
+                                <a href="#" class="live__item-chanel"
+                                    >Give More, Get More</a
+                                >
+                            </p>
+                            <p class="live__item-desc line-clamp">
+                                Traditional (Afghani Folklore) Additional Word
+                                Ustad. Radmanesh & Mehboob
+                            </p>
+                            <div class="live__item-info-wrap">
+                                <div class="live__item-info">
+                                    <p class="live__item-info-text">Views</p>
+                                    <span class="live__item-info-number"
+                                        >36.567</span
+                                    >
+                                </div>
+                                <div class="live__item-info">
+                                    <p class="live__item-info-text">Like</p>
+                                    <span class="live__item-info-number"
+                                        >2.614</span
+                                    >
+                                </div>
+                                <div class="live__item-info">
+                                    <p class="live__item-info-text">Comment</p>
+                                    <span class="live__item-info-number"
+                                        >589</span
+                                    >
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="live__item-btn">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 9.00521C0 4.03763 4.03958 0 9 0C13.9604 0 18 4.03763 18 9.00521C18 13.9624 13.9604 18 9 18C4.03958 18 0 13.9624 0 9.00521ZM12.3012 9.91606C12.3967 9.82055 12.5183 9.67294 12.5444 9.6382C12.6834 9.45586 12.7529 9.2301 12.7529 9.00521C12.7529 8.75253 12.6747 8.51809 12.527 8.32706C12.5149 8.31496 12.4912 8.28917 12.4603 8.25556C12.4026 8.19266 12.3196 8.10238 12.2403 8.02315C11.528 7.25904 9.66891 6.00868 8.69594 5.62663C8.54826 5.56671 8.17471 5.4356 7.9749 5.42692C7.78378 5.42692 7.60135 5.47033 7.4276 5.55716C7.21042 5.67873 7.03667 5.86975 6.94111 6.09551C6.8803 6.25181 6.78474 6.72069 6.78474 6.72938C6.68918 7.24168 6.63706 8.07525 6.63706 8.99566C6.63706 9.87352 6.68918 10.6715 6.76737 11.1925C6.76952 11.1946 6.77699 11.2319 6.7886 11.2898C6.82389 11.4657 6.89742 11.8324 6.97586 11.9826C7.16698 12.3473 7.54054 12.5731 7.94015 12.5731H7.9749C8.23552 12.5644 8.78281 12.3386 8.78281 12.33C9.70366 11.9479 11.5193 10.7583 12.249 9.96816L12.3012 9.91606Z"
+                                        fill="#3D3B39"
+                                    />
+                                </svg>
+                                Watch now
+                            </a>
+                        </div>
+                        <!-- Media -->
+                        <div class="live__item-media">
+                            <div class="live__item-img-wrap">
+                                <img
+                                    src="https://source.unsplash.com/random"
+                                    alt="media01"
+                                    class="live__item-img"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Live__item02 -->
+                    <li class="live__item">
+                        <!-- Content -->
+                        <div class="live__item-content">
+                            <p>
+                                <a href="#" class="live__item-chanel"
+                                    >Give More, Get More</a
+                                >
+                            </p>
+                            <p class="live__item-desc line-clamp">
+                                Traditional (Afghani Folklore) Additional Word
+                                Ustad. Radmanesh & Mehboob
+                            </p>
+                            <div class="live__item-info-wrap">
+                                <div class="live__item-info">
+                                    <p class="live__item-info-text">Views</p>
+                                    <span class="live__item-info-number"
+                                        >36.567</span
+                                    >
+                                </div>
+                                <div class="live__item-info">
+                                    <p class="live__item-info-text">Like</p>
+                                    <span class="live__item-info-number"
+                                        >2.614</span
+                                    >
+                                </div>
+                                <div class="live__item-info">
+                                    <p class="live__item-info-text">Comment</p>
+                                    <span class="live__item-info-number"
+                                        >589</span
+                                    >
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="live__item-btn">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 9.00521C0 4.03763 4.03958 0 9 0C13.9604 0 18 4.03763 18 9.00521C18 13.9624 13.9604 18 9 18C4.03958 18 0 13.9624 0 9.00521ZM12.3012 9.91606C12.3967 9.82055 12.5183 9.67294 12.5444 9.6382C12.6834 9.45586 12.7529 9.2301 12.7529 9.00521C12.7529 8.75253 12.6747 8.51809 12.527 8.32706C12.5149 8.31496 12.4912 8.28917 12.4603 8.25556C12.4026 8.19266 12.3196 8.10238 12.2403 8.02315C11.528 7.25904 9.66891 6.00868 8.69594 5.62663C8.54826 5.56671 8.17471 5.4356 7.9749 5.42692C7.78378 5.42692 7.60135 5.47033 7.4276 5.55716C7.21042 5.67873 7.03667 5.86975 6.94111 6.09551C6.8803 6.25181 6.78474 6.72069 6.78474 6.72938C6.68918 7.24168 6.63706 8.07525 6.63706 8.99566C6.63706 9.87352 6.68918 10.6715 6.76737 11.1925C6.76952 11.1946 6.77699 11.2319 6.7886 11.2898C6.82389 11.4657 6.89742 11.8324 6.97586 11.9826C7.16698 12.3473 7.54054 12.5731 7.94015 12.5731H7.9749C8.23552 12.5644 8.78281 12.3386 8.78281 12.33C9.70366 11.9479 11.5193 10.7583 12.249 9.96816L12.3012 9.91606Z"
+                                        fill="#3D3B39"
+                                    />
+                                </svg>
+                                Watch now
+                            </a>
+                        </div>
+                        <!-- Media -->
+                        <div class="live__item-media">
+                            <figure
+                                class="live__item-img-wrap live__item-img-wrap--big"
+                            >
+                                <img
+                                    src="https://source.unsplash.com/random"
+                                    alt="media01"
+                                    class="live__item-img"
+                                />
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Popular -->
+            <section class="popular">
+                <div class="popular__heading">
+                    <p class="popular__title">Popular Videos</p>
+                    <a href="#" class="popular__link">See more</a>
+                </div>
+                <ul class="popular__list">
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second...
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                    <!-- Item01 -->
+                    <li class="popular__item">
+                        <!-- info -->
+                        <div class="popular__info-wrap">
+                            <button class="popular__avt-wrap">
+                                <img
+                                    src="./img/popular-avt.avif"
+                                    alt="popular-avt"
+                                    class="popular__avt"
+                                />
+                            </button>
+                            <div class="popular__info">
+                                <p class="popular__name">Ahamad Deedat</p>
+                                <p class="popular__time">3h ago</p>
+                            </div>
+                        </div>
+                        <!-- img -->
+                        <figure class="popular__img-wrap">
+                            <figure class="popular__play">
+                                <img src="./img/Play.svg" alt="popular__play" />
+                            </figure>
+                            <img
+                                src="https://source.unsplash.com/random"
+                                alt="popular-img"
+                            />
+                            <p class="popular__img-time">4:30</p>
+                        </figure>
+                        <a href="#" class="popular__topic">Life story</a>
+                        <h2 class="popular__title">
+                            Salat Definition & Meaning
+                        </h2>
+                        <p class="popular__desc line-clamp">
+                            Salat definition, prayers, said five times a day:
+                            the second
+                        </p>
+                        <p class="popular__detail">
+                            428,304 views • 49,206 like
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
