@@ -283,7 +283,7 @@ main .container {
     column-gap: 10px;
     font-size: 1.4rem;
     line-height: 1.57;
-
+    color: #3d3b39;
     transition: 0.3s;
 }
 .live__item-btn:hover {
