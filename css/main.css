@@ -254,6 +254,7 @@ img {
 .container {
     padding: 30px;
     background-color: #fff;
+    transition: 0.3s;
 }
 /* Header */
 .header {
@@ -380,8 +381,8 @@ img {
     transition: 0.3s;
 }
 .live__arrow:hover {
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid #3d3b39;
+    color: #3d3b39;
 }
 /* Live list*/
 .live__list {
