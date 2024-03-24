@@ -358,6 +358,9 @@ img {
 }
 .live__title {
     font-size: 1.6rem;
+    line-height: 1.5;
+    color: #3d3b39;
+    font-weight: 400;
 }
 .live__action {
     display: flex;
